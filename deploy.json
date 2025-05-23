@@ -11,14 +11,14 @@
     },
     "webAppName": {
       "type": "string",
-      "defaultValue": "myMvcApp",
+      "defaultValue": "myMvcApp-123456789",
       "metadata": {
         "description": "Name of the Web App."
       }
     },
     "location": {
       "type": "string",
-      "defaultValue": "eastus",
+      "defaultValue": "francecentral",
       "metadata": {
         "description": "Location for the resources."
       }
@@ -31,8 +31,8 @@
       "name": "[parameters('appServicePlanName')]",
       "location": "[parameters('location')]",
       "sku": {
-        "name": "B1",
-        "tier": "Basic"
+        "name": "S1",
+        "tier": "Standard"
       },
       "properties": {
         "reserved": true
